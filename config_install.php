@@ -10,9 +10,10 @@
 */
 
 // Database connection parameters
-$db_host = '';      // Database server address
-$db_user = '';      // Database server username
-$db_password = '';  // Database server password
-$db_database = '';  // Database name
-$db_prefix = '';    // Database tables prefix
+$db_host = 'localhost';      // Database server address
+$db_user = 'user';      // Database server username
+$db_password = 'password';  // Database server password
+$db_database = 'database name';  // Database name
+$db_prefix = 'DBBH_';    // Database tables prefix
+
 ?>
