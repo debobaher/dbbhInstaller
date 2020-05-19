@@ -160,6 +160,9 @@ if($phase1) {
     $var_ar = analizeVar($line, $com_pos); // Array {name, value} or FALSE
     /* 3 */
     if($var_ar !== FALSE) {
+      if($comment == '')
+        $comment = $var_ar['name'];
+        
       if($phase1) // Printig the HTML from
         printf('<tr><td>' . $comment . '</td><td><input type=text name="' . $var_ar['name'] . '" value="' . $var_ar['value'] . '" /></td></tr>');
       else // Storing the content of the config.php file
